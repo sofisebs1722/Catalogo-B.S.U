@@ -4,7 +4,9 @@ body {
     font-family: Arial, sans-serif;
     box-sizing: border-box;
 }
-
+a{
+    text-decoration: none;
+}
 
 .navbar {
     background-color: #333;
@@ -46,15 +48,23 @@ body {
 }
 
 .user-icon,
-.cart-icon {
+.cart-icon{
     float: right;
     color: #fff;
     margin-right: 15px;
     cursor: pointer;
     filter: invert(1);
     width: 20px;
+    
 }
-
+.menu-toggle{
+    float: left;
+    color: #ffffff;
+    margin-right: 15px;
+    cursor: pointer;
+    filter: invert(1);
+    width: 20px;
+}
 
 .content {
     width: 100%;
