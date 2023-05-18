@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
 body {
     margin: 0;
     padding: 0;
@@ -21,58 +26,56 @@ a{
 }
 
 
-.sidebar {
-    width: 120px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    position: fixed;
-    top: 50px;
-    left: 0;
-    bottom: 0;
-    height: 150px;
-}
-
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.sidebar ul li {
-    margin-bottom: 10px;
-}
-
-.sidebar ul li a{
-    text-decoration: none;
-    color: black;
-}
-
-.user-icon,
-.cart-icon{
+.carro,
+.user{
     float: right;
-    color: #fff;
-    margin-right: 15px;
-    cursor: pointer;
-    filter: invert(1);
-    width: 20px;
-    
-}
-.menu-toggle{
-    float: left;
     color: #ffffff;
     margin-right: 15px;
     cursor: pointer;
-    filter: invert(1);
     width: 20px;
 }
 
-.content {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.content img{
-    width: 800px;
-    border: 100%;
+.menu{
+    float: left;
+    color: #ffffff;
+    margin-left: 15px;
+    cursor: pointer;
+    width: 20px;
 }
 
+.nav-menu{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 100px;
+    background: rgba(0, 0, 0, .95);
+    text-align: center;
+    transition: all .5s;
+}
+
+.nav-menu li{
+    display: block;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s;
+}
+
+.nav-menu li a{
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-menu li a.active, .nav-menu li a:hover{
+    color: red;
+    transition: .3s;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked~ .nav-menu{
+    height: 100vh;
+}
