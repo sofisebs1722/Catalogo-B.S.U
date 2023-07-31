@@ -51,6 +51,7 @@ function pagarClicked(){
     }
     actualizarTotalCarrito();
     ocultarCarrito();
+    // "https://wa.me/3245096792?text=Hola%20que%20mas"
 }
 //Funciòn que controla el boton clickeado de agregar al carrito
 function agregarAlCarritoClicked(event){
