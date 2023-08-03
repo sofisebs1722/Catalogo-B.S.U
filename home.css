@@ -118,21 +118,26 @@ a{
 /* SECCION CONTENEDOR DE ITEMS */
 .contenedor .contenedor-items{
     margin-top: 30px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: (minmax(220px, auto));
     grid-gap:30px;
-    grid-row-gap: 80px;
+    grid-row-gap: 80px; */
     /* width: 60%; */
     width: 100%;
     transition: .3s;
 }
-.contenedor .contenedor-items div{
-    display: grid;
+.contenedor .contenedor-items > div{
+    /* display: grid;
     grid-template-columns: t( minmax(220px, 1fr));
-    grid-gap:30px;
-
-
+    grid-gap:30px; */
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 50px;
 }
 .contenedor .contenedor-items .item{
     max-width: 200px;
@@ -149,8 +154,32 @@ a{
     opacity: 1;
 }
 
+.contenedor .contenedor-items .item .img-item2{
+    width: 200px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+}
+.contenedor .contenedor-items .item .img1{
+    background-image: url(imagenes/camiseta.webp);
+}
+.contenedor .contenedor-items .item .img2{
+    background-image: url(imagenes/pantalones.webp);
+}
+.contenedor .contenedor-items .item .img3{
+    background-image: url(imagenes/boxers.webp);
+}
+.contenedor .contenedor-items .item .img4{
+    background-image: url(imagenes/zapatos.webp);
+}
+.contenedor .contenedor-items .item .img5{
+    background-image: url(imagenes/Captura\ de\ pantalla\ \(2\).png);
+}
+
+
 .contenedor .contenedor-items .item .img-item{
-    width: 100%;
+    /* width: 100%; */
+    height: 200px;
 }
 .contenedor .contenedor-items .item:hover{
     box-shadow: 0 0 10px #666;
