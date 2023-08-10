@@ -169,13 +169,16 @@ a{
     background-image: url(imagenes/pantalones.webp);
 }
 .contenedor .contenedor-items .item .img3{
-    background-image: url(imagenes/boxers.webp);
+    background-image: url(imagenes/unico.webp);
+    background-size: 270px;
+    background-repeat: no-repeat;
 }
 .contenedor .contenedor-items .item .img4{
-    background-image: url(imagenes/zapatos.webp);
+    background-image: url(imagenes/louis-vuitton-tenis-lv-skate-zapatos--BO9U3PMI22_PM2_Front\ view.webp);
+
 }
 .contenedor .contenedor-items .item .img5{
-    background-image: url(imagenes/Captura\ de\ pantalla\ \(2\).png);
+    background-image: url(imagenes/monasterycouture_com_co-LEUCO-FRENTE_1024x1024.webp);
 }
 
 
